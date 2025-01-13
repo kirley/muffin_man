@@ -46,6 +46,8 @@ module MuffinMan
           "reportType" => report_type,
           "marketplaceIds" => marketplace_ids
         }
+        p "**** MUFFIN MAN ****"
+        p @request_body
         @request_body["dataStartTime"] = start_time unless start_time.nil?
         @request_body["dataEndTime"] = end_time unless end_time.nil?
         @request_body["reportOptions"] = report_options unless report_options.empty?
